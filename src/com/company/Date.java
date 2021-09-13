@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Date {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        // I switced from beginning to the second part of the task- with console inputs.
         System.out.println("Please write the day");
         int day = input.nextInt();
         System.out.println("Please write the month");

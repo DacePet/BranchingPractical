@@ -1,2 +1,2 @@
 # Project exclude paths
-/out/
+/out/!/src/com/company/DayNumberAlternat.java
