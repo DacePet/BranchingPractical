@@ -33,17 +33,10 @@ public class CalculationV2 {
                 System.out.println(num1 + "; " + num2);
                 break;
             case 'b':
-               // if (num1>num2)? num1 + " > " + num2 :  num2 + " > " + num1;
-               if (num1 > num2) {
-                  System.out.println(num1 + " > " + num2);
-            } else
-              System.out.println(num2 + " > " + num1);
+                System.out.println((num1 > num2) ? (num1 + " > " + num2) : (num2 + " > " + num1));
                 break;
             case 's':
-                if (num1 < num2) {
-                    System.out.println(num1 + " < " + num2);
-                } else
-                    System.out.println(num2 + " < " + num1);
+                System.out.println((num1 < num2) ? (num1 + " < " + num2) : (num2 + " < " + num1));
                 break;
         }
     }

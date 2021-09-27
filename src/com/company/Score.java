@@ -13,9 +13,8 @@ public class Score {
         String name = input.next();
         System.out.println("Score of player:");
         int score = input.nextInt();
-        System.out.println(name + " managed to get into positon " + calculateHighScorePosition((1500)) + " on the high score table");
-        /// line 16 is my trouble, how can I refer Method calculateHighScorePosition to get 1, 2, 3, 4. I know, I can write score in scopes, but want via terminal entry
-    }
+        System.out.println(name + " managed to get into positon " + calculateHighScorePosition(score) + " on the high score table");
+           }
 
     public static int calculateHighScorePosition(int score) {
 
