@@ -9,9 +9,9 @@ public class CalculationV2 {
         int num1 = input.nextInt();
         System.out.println("Enter another number");
         int num2 = input.nextInt();
-        System.out.println("Enter the option (+ sum; - substract; / devide; * multiply; % get remainder when first number is devided by second; p print both numbers; b verify which is bigger; s veryfy which is smaller)");
+        System.out.println("Enter the option (+ sum; - substract; / devide; * multiply; % get remainder when first number is devided by second; p print both numbers; b verify which is bigger; s verify which is smaller)");
         // previous line looks not good, too long
-        char option =input.next().charAt(0);
+        char option = input.next().charAt(0);
         System.out.println("Result is:");
         switch (option) {
             case '+':
@@ -33,10 +33,11 @@ public class CalculationV2 {
                 System.out.println(num1 + "; " + num2);
                 break;
             case 'b':
-                if (num1 > num2) {
-                    System.out.println(num1 + " > " + num2);
-                } else
-                    System.out.println(num2 + " > " + num1);
+               // if (num1>num2)? num1 + " > " + num2 :  num2 + " > " + num1;
+               if (num1 > num2) {
+                  System.out.println(num1 + " > " + num2);
+            } else
+              System.out.println(num2 + " > " + num1);
                 break;
             case 's':
                 if (num1 < num2) {
