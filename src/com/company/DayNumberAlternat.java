@@ -21,6 +21,7 @@ public class DayNumberAlternat {
         if (month <= 0 || month > 12)
             System.out.println("Wrong input");
 // I presume negative year is theoretically possible. b.C.
+        // USE Calendar library
     }
 
 }

@@ -9,9 +9,9 @@ public class Speed {
         final double coef = 0.621371;
         double kilometersPerHour = input.nextDouble();
         double milesPerHour = Math.round(kilometersPerHour * coef);
-        System.out.println((kilometersPerHour < 0)?("-1"):("Speed " + kilometersPerHour + " kilometers per hour equals " + milesPerHour + " miles per hour"));
+        System.out.println((kilometersPerHour < 0) ? ("Wrong input") : ("Speed " + kilometersPerHour +
+                " kilometers per hour equals " + milesPerHour + " miles per hour"));
     }
-
 
     public static void main(String[] args) {
         toMilesPerHour();
