@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ATM {
     static int balanceMain = 1000;
-    static int pinCodeMain = 1234;
+    static final int pinCodeMain = 1234;
 
     public static void main(String[] args) {
         boolean b1 = enterPin();
@@ -74,18 +74,19 @@ public class ATM {
     static void takeOutMoney() {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the amount you would like to withdraw");
-        int sum = input.nextInt();
-        System.out.println((sum <= balanceMain) ? ("Please take your money: " + sum + " EUR") : ("Insufficient funds"));
-        if (sum <= balanceMain) {
-            System.out.println("Remaining balance: " + (balanceMain - sum) + " EUR");
-        }
+        int withdraw = input.nextInt();
+        System.out.println((withdraw <= balanceMain) ? ("Please take your money: " + withdraw + " EUR") : ("Insufficient funds"));
+        //if (withdraw<= balanceMain) {
+        //  System.out.println("Remaining balance: " + (balanceMain - withdraw) + " EUR");
+        //}
     }
 
     static void deposit() {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the amount you would like to deposit: ");
         int temp = input.nextInt();
-        System.out.println("Current balance: " + (balanceMain + temp) + " EUR");
+        System.out.println("Your deposit " + temp + " EUR is transferred to Your account");
+        // ("Current balance: " + (balanceMain + temp) + " EUR");
     }
 
     static int selectOperation(Scanner input) {
